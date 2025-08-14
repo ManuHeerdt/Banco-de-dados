@@ -56,3 +56,14 @@ FOREIGN KEY (id_aluno) REFERENCES aluno(id_aluno)
 );
 
 SHOW TABLES;
+-- Insert dados professor
+INSERT INTO professor(id_professor,nome,especialidade,salario,uf) VALUES 
+(1,'João da Silva','Banco de Dados','2500.00','PR');
+
+-- Insert diciplinas
+INSERT INTO diciplina(nome,id_professor,carga_horaria) VALUES
+('Banco de Dados Iniciante',1,60);
+
+-- Alunos
+INSERT INTO aluno( nome, seco, data_nascimento, nota_fiscal,ativo) VALUES
+('Isabel Heerdt','F','2007-05-10',8.5, TRUE);
